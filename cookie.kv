@@ -1,0 +1,25 @@
+
+<Cookie>:
+    GridLayout:
+        size: root.width, root.height
+        rows: 2
+        cols: 2
+        padding: 10, 10, 10, 10
+
+        TextInput:
+            id: txt_fold
+            text: 'd:/screens'
+        Button:
+            id: but_fold
+            text: '[...]'
+            on_release: root.getFold()
+        Button:
+            id: but_ok
+            text: 'OK'
+            on_release: root.getCancel()
+            on_release: root.main(txt_fold.text)
+        Button:
+            id: but_cancel
+            text: 'ANULUJ'
+            on_release: root.getCancel()
+
